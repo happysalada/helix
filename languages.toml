@@ -1608,6 +1608,21 @@ injection-regex = "sql"
 name = "sql"
 source = { git = "https://github.com/DerekStride/tree-sitter-sql", rev = "3a3f92b29c880488a08bc2baaf1aca6432ec3380" }
 
+
+[[language]]
+name = "surrealql"
+scope = "source.surql"
+file-types = ["surql"]
+roots = []
+comment-token = "//"
+indent = { tab-width = 2, unit = "    " }
+injection-regex = "surql"
+grammar = "surrealql"
+
+[[grammar]]
+name = "surrealql"
+source = { git = "https://github.com/DariusCorvus/tree-sitter-surrealdb", rev = "172027cccd3e657afc3b7e05552f5980e66d544e" }
+
 [[language]]
 name = "gdscript"
 scope = "source.gdscript"
